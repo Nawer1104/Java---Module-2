@@ -5,6 +5,5 @@ public class Demo {
         Date now = new Date();
 
         System.out.println("Now is :" + now);
-
     }
 }
