@@ -14,8 +14,6 @@ public class DocSoThanhChu {
            int a = Integer.parseInt(newString[i]);
            show(a);
         }
-
-
     }
 
     public static void show(int number) {
