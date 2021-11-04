@@ -1,4 +1,4 @@
-package JavaLession1;
+package JavaLesson1;
 
 public class KhaiBaoSuDungBien {
     public static void main(String[] args) {
