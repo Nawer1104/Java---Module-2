@@ -49,7 +49,7 @@ public class GopMang {
             arr3[k] = arr1[k];
         }
 
-        for (int k = 0, l = arr3.length - arr1.length - 1; k < arr2.length && l < arr3.length; k++, l++) {
+        for (int k = 0, l = Math.abs(arr3.length - arr1.length); k < arr2.length && l < arr3.length; k++, l++) {
             arr3[l] = arr2[k];
         }
 
