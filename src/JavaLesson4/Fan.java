@@ -19,6 +19,8 @@ public class Fan {
         testFan1.setOn(false);
         testFan1.setRadius(10);
         System.out.println(testFan1.toString());
+
+
     }
 }
 
@@ -72,3 +74,4 @@ class fanInformation {
         }
     }
 }
+
