@@ -1,8 +1,9 @@
 package JavaLesson6.CacHeDoiTuongHinhHoc;
 
+import JavaLesson7.InterfaceColorable.Colorable;
 import JavaLesson7.InterfaceResizeable.Resizeable;
 
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape implements Resizeable, Colorable {
     private double radius = 1.0;
 
     public Circle() {
@@ -25,6 +26,7 @@ public class Circle extends Shape implements Resizeable {
         this.radius = radius;
     }
 
+    @Override
     public double getArea() {
         return radius * radius * Math.PI;
     }
@@ -48,5 +50,10 @@ public class Circle extends Shape implements Resizeable {
     @Override
     public void resize(double percent) {
         this.radius = (this.radius * percent / 100) + this.radius;
+    }
+
+    @Override
+    public String howToColor() {
+        return "Color all four sides";
     }
 }

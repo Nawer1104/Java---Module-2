@@ -3,7 +3,12 @@ package JavaLesson6.CacHeDoiTuongHinhHoc;
 public class TestShape {
     public static void main(String[] args) {
 
-        Shape shape = new Shape("red",false);
+        Shape shape = new Shape("red", false) {
+            @Override
+            public double getArea() {
+                return 0;
+            }
+        };
         System.out.println(shape);
 
         Circle circle = new Circle("black", true, 4.0);
