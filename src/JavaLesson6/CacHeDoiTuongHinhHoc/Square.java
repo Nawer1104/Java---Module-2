@@ -1,6 +1,8 @@
 package JavaLesson6.CacHeDoiTuongHinhHoc;
 
-public class Square  extends  Rectangle {
+import JavaLesson7.InterfaceResizeable.Resizeable;
+
+public class Square  extends  Rectangle implements Resizeable {
     public Square() {
     }
 
@@ -21,12 +23,16 @@ public class Square  extends  Rectangle {
         return getWidth();
     }
 
-
     @Override
     public String toString() {
         return "A Square with side="
                 + getSide()
+                + ", have Area is: "
+                + getArea()
+                + ", have Perimeter is: "
+                + getPerimeter()
                 + ", which is a subclass of "
                 + super.toString();
     }
+
 }

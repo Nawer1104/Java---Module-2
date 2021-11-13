@@ -1,6 +1,8 @@
 package JavaLesson6.CacHeDoiTuongHinhHoc;
 
-public class Rectangle extends Shape {
+import JavaLesson7.InterfaceResizeable.Resizeable;
+
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -48,7 +50,17 @@ public class Rectangle extends Shape {
                 + getWidth()
                 + " and length="
                 + getLength()
+                + ", have Area is: "
+                + getArea()
+                + ", have Perimeter is: "
+                + getPerimeter()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        this.width = this.width + (this.width * percent / 100);
+        this.length = this.length + (this.length * percent / 100);
     }
 }
