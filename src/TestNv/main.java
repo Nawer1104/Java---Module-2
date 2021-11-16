@@ -19,9 +19,9 @@ public class main {
             System.out.println("4: Sua nhan vien");
             System.out.println("0: Exit");
 
-            int so = scanner.nextInt();
+            int num = scanner.nextInt();
 
-            switch (so) {
+            switch (num) {
                 case 1:
                     show(nhanVien);
                     break;
