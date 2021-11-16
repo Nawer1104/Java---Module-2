@@ -8,9 +8,9 @@ public class main {
         Scanner scanner = new Scanner(System.in);
 
         test[] nhanVien = new test[3];
-        nhanVien[0] = new test("Toan", 25, "male");
-        nhanVien[1] = new test("Nam", 30, "male");
-        nhanVien[2] = new test("Duong", 26, "female");
+        nhanVien[0] = new test("Nam", 2555, "Ha Noi");
+        nhanVien[1] = new test("Minh", 3000, "Ha Noi");
+        nhanVien[2] = new test("Duong", 2666, "Hai Phong");
 
         int choice = -1;
         while (choice != 0) {
@@ -53,12 +53,12 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Name:");
         String name = scanner.nextLine();
-        System.out.println("Gender:");
-        String gender = scanner.nextLine();
-        System.out.println("Age:");
-        int age = scanner.nextInt();
+        System.out.println("Adress:");
+        String address = scanner.nextLine();
+        System.out.println("Phone Number:");
+        int phoneNumber = scanner.nextInt();
 
-        test nhanVienn = new test(name, age, gender);
+        test nhanVienn = new test(name, phoneNumber, address);
 
         test[] newNV = new test[nhanVien.length + 1];
         for (int i = 0; i < nhanVien.length; i++) {
@@ -114,14 +114,14 @@ public class main {
                 System.out.println("Name:");
                 scanner.nextLine();
                 String name = scanner.nextLine();
-                System.out.println("Gender:");
-                String gender = scanner.nextLine();
-                System.out.println("Age:");
-                int age = scanner.nextInt();
+                System.out.println("Address:");
+                String address = scanner.nextLine();
+                System.out.println("Phone Number:");
+                int phoneNumber = scanner.nextInt();
 
                 nhanVien[i].setName(name) ;
-                nhanVien[i].setAge(age);
-                nhanVien[i].setGender(gender);
+                nhanVien[i].setPhoneNumber(phoneNumber);
+                nhanVien[i].setAddress(address);
             }
         }
         test[] newNV = new test[nhanVien.length];
