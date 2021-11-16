@@ -1,6 +1,6 @@
 package TestNv;
 
-public class test {
+public class NhanVien {
     private int id;
     private String name;
     private int phoneNumber;
@@ -8,7 +8,7 @@ public class test {
 
     private static int idNumber = 1;
 
-    public test(String name, int phoneNumber, String address) {
+    public NhanVien(String name, int phoneNumber, String address) {
         this.id = idNumber++;
         this.name = name;
 
@@ -47,7 +47,7 @@ public class test {
 
     @Override
     public String toString() {
-        return "test{" + "id=" + id +
+        return "NhanVien{" + "id=" + id +
                 ", name='" + name + '\'' +
                 ", phone number=" + phoneNumber +
                 ", address='" + address + '\'' +

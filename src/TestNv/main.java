@@ -1,17 +1,15 @@
 package TestNv;
 
-import TestNv.test;
-
 import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        test[] nhanVien = new test[3];
-        nhanVien[0] = new test("Nam", 2555, "Ha Noi");
-        nhanVien[1] = new test("Minh", 3000, "Ha Noi");
-        nhanVien[2] = new test("Duong", 2666, "Hai Phong");
+        NhanVien[] nhanVien = new NhanVien[3];
+        nhanVien[0] = new NhanVien("Nam", 2555, "Ha Noi");
+        nhanVien[1] = new NhanVien("Minh", 3000, "Ha Noi");
+        nhanVien[2] = new NhanVien("Duong", 2666, "Hai Phong");
 
         int choice = -1;
         while (choice != 0) {
@@ -43,14 +41,14 @@ public class main {
 
     }
 
-    public static void show(test[] nhanVien) {
-        for (test x : nhanVien
+    public static void show(NhanVien[] nhanVien) {
+        for (NhanVien x : nhanVien
         ) {
             System.out.println(x.toString());
         }
     }
 
-    public static test[] create(test[] nhanVien) {
+    public static NhanVien[] create(NhanVien[] nhanVien) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Name:");
         String name = scanner.nextLine();
@@ -59,23 +57,23 @@ public class main {
         System.out.println("Phone Number:");
         int phoneNumber = scanner.nextInt();
 
-        test nhanVienn = new test(name, phoneNumber, address);
+        NhanVien nhanVienn = new NhanVien(name, phoneNumber, address);
 
-        test[] newNV = new test[nhanVien.length + 1];
+        NhanVien[] newNV = new NhanVien[nhanVien.length + 1];
         for (int i = 0; i < nhanVien.length; i++) {
             newNV[i] = nhanVien[i];
         }
 
         newNV[nhanVien.length] = nhanVienn;
 
-        for (test x : newNV
+        for (NhanVien x : newNV
         ) {
             System.out.println(x.toString());
         }
         return newNV;
     }
 
-    public static test[] delete(test[] nhanVien) {
+    public static NhanVien[] delete(NhanVien[] nhanVien) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Dien id thang can xoa:");
         int id = scanner.nextInt();
@@ -88,7 +86,7 @@ public class main {
             }
         }
 
-        test[] newNV = new test[nhanVien.length - 1];
+        NhanVien[] newNV = new NhanVien[nhanVien.length - 1];
 
         for (int i = index; i < nhanVien.length - 1; i++) {
             nhanVien[i] = nhanVien[i +1];
@@ -97,14 +95,14 @@ public class main {
         for (int i = 0; i < newNV.length; i++) {
             newNV[i] = nhanVien[i];
         }
-        for (test x : newNV
+        for (NhanVien x : newNV
         ) {
             System.out.println(x.toString());
         }
         return newNV;
     }
 
-    public static test[] fix(test[] nhanVien) {
+    public static NhanVien[] fix(NhanVien[] nhanVien) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" Dien id thang can sua:");
         int id = scanner.nextInt();
@@ -125,12 +123,12 @@ public class main {
                 nhanVien[i].setAddress(address);
             }
         }
-        test[] newNV = new test[nhanVien.length];
+        NhanVien[] newNV = new NhanVien[nhanVien.length];
 
         for (int i = 0; i < newNV.length; i++) {
             newNV[i] = nhanVien[i];
         }
-        for (test x : newNV
+        for (NhanVien x : newNV
         ) {
             System.out.println(x.toString());
         }
