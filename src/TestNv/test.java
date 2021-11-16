@@ -1,4 +1,4 @@
-package JavaLesson1;
+package TestNv;
 
 public class test {
     private int id;
