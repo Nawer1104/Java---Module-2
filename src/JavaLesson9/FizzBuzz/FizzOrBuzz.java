@@ -1,8 +1,10 @@
 package JavaLesson9.FizzBuzz;
 
+import java.util.Arrays;
+
 public class FizzOrBuzz {
     int num;
-    String result;
+    String result = "";
 
     public FizzOrBuzz(int num) {
         this.num = num;
@@ -26,9 +28,12 @@ public class FizzOrBuzz {
                     } else if (newString[i].equals("5")) {
                         result = "buzz";
                     } else {
-                        int stringToNumber = Integer.parseInt(newString[i]);
-                        show(stringToNumber);
+                        result = "";
+                        newString[i] = show(newString[i]);
                     }
+                }
+                for (int i = 0; i < newString.length; i++) {
+                    result += newString[i];
                 }
             }
         } else {
@@ -37,38 +42,39 @@ public class FizzOrBuzz {
         return result;
     }
 
-    public void show(int num) {
-        switch (num) {
-            case 0:
-                System.out.print("zero ");
+    public String show(String character) {
+        switch (character) {
+            case "0":
+                character = "zero ";
                 break;
-            case 1:
-                System.out.print("one ");
+            case "1":
+                character = "one ";
                 break;
-            case 2:
-                System.out.print("two ");
+            case "2":
+                character = "two ";
                 break;
-            case 3:
-                System.out.print("three ");
+            case "3":
+                character = "three ";
                 break;
-            case 4:
-                System.out.print("four ");
+            case "4":
+                character = "four ";
                 break;
-            case 5:
-                System.out.print("five ");
+            case "5":
+                character = "five ";
                 break;
-            case 6:
-                System.out.print("six ");
+            case "6":
+                character = "six ";
                 break;
-            case 7:
-                System.out.print("seven ");
+            case "7":
+                character = "seven ";
                 break;
-            case 8:
-                System.out.print("eight ");
+            case "8":
+                character = "eight ";
                 break;
-            case 9:
-                System.out.print("nine ");
+            case "9":
+                character = "nine ";
                 break;
         }
+        return character;
     }
 }

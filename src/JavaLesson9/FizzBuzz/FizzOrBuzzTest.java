@@ -77,7 +77,20 @@ class FizzOrBuzzTest {
     void fizzOrBuzz6() {
         int num = 26;
         String result;
-        String expected = "two six";
+        String expected = "two six ";
+
+        FizzOrBuzz fizzOrBuzz = new FizzOrBuzz(num);
+        result = fizzOrBuzz.fizzOrBuzz(num);
+
+        assertEquals(expected, result);
+    }
+
+    @Test
+    @DisplayName("Test case 86")
+    void fizzOrBuzz7() {
+        int num = 86;
+        String result;
+        String expected = "eight six ";
 
         FizzOrBuzz fizzOrBuzz = new FizzOrBuzz(num);
         result = fizzOrBuzz.fizzOrBuzz(num);
