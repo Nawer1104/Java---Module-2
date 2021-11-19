@@ -12,7 +12,7 @@ public class MyLinkedList {
     public MyLinkedList() {
     }
 
-    private class Node {
+    public class Node {
         private Node next;
         private Object data;
 

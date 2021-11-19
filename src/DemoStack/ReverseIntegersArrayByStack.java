@@ -15,7 +15,7 @@ public class ReverseIntegersArrayByStack {
         }
         System.out.println();
 
-        System.out.println("Let's add all elements to the Stack");
+        System.out.println("Let's add all elements in to the Stack");
         for (Integer x : integers
              ) {
             myStack.add(x);
