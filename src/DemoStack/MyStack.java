@@ -35,7 +35,7 @@ public class MyStack<E> {
         elements = Arrays.copyOf(elements, newSize);
     }
 
-    public E pop() {
+    public E pop(){
         if (!isEmpty()) {
             E e = elements[top];
             elements[top] = null;

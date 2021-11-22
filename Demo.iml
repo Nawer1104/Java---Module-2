@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/apj-junit-calculator/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/apj-junit-calculator/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/MD2-MVC-Student-Manage/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
