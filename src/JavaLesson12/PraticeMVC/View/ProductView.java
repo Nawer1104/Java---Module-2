@@ -1,7 +1,7 @@
-package JavaLesson12.Pratice.View;
+package JavaLesson12.PraticeMVC.View;
 
-import JavaLesson12.Pratice.Controller.ProductController;
-import JavaLesson12.Pratice.Model.Product;
+import JavaLesson12.PraticeMVC.Controller.ProductController;
+import JavaLesson12.PraticeMVC.Model.Product;
 
 import java.util.Scanner;
 

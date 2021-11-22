@@ -1,7 +1,7 @@
-package JavaLesson12.Pratice.Controller;
+package JavaLesson12.PraticeMVC.Controller;
 
-import JavaLesson12.Pratice.Model.Product;
-import JavaLesson12.Pratice.Service.ProductManagement;
+import JavaLesson12.PraticeMVC.Model.Product;
+import JavaLesson12.PraticeMVC.Service.ProductManagement;
 
 import java.util.List;
 

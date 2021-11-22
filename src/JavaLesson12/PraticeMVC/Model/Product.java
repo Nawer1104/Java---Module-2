@@ -1,4 +1,4 @@
-package JavaLesson12.Pratice.Model;
+package JavaLesson12.PraticeMVC.Model;
 
 public class Product {
     private int id;

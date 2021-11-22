@@ -32,13 +32,19 @@ public class MyTree {
             return;
         }
 
-        while (temp != null) {
+        while (true) {
             if (e > temp.data) {
-                temp = temp.right;
+                if (temp.right == null) {
+                    temp.right = newNode;
+                    return;
+                }
             } else if ( e < temp.data) {
-                temp = temp.left;
+                if (temp.left == null) {
+                    temp.left = newNode;
+                    return;
+                }
             } else return;
         }
-        temp = newNode;
+
     }
 }

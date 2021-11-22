@@ -1,6 +1,6 @@
-package JavaLesson12.Pratice.Service;
+package JavaLesson12.PraticeMVC.Service;
 
-import JavaLesson12.Pratice.Model.Product;
+import JavaLesson12.PraticeMVC.Model.Product;
 
 import java.util.List;
 

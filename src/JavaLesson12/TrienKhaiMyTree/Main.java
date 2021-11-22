@@ -9,7 +9,5 @@ public class Main {
         myTree.add(12);
         myTree.add(9);
 
-
-
     }
 }

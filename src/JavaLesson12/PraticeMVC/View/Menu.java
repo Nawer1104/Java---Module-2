@@ -1,4 +1,4 @@
-package JavaLesson12.Pratice.View;
+package JavaLesson12.PraticeMVC.View;
 
 import java.util.Scanner;
 
