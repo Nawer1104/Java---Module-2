@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/MD2-MVC-Student-Manage" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apj-calculator" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/apj-junit-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/apj-read-csv-file" vcs="Git" />
   </component>
 </project>
