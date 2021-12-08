@@ -29,9 +29,8 @@ public class ReadFileExample {
     }
 
     public static void main(String[] args) {
-        System.out.println("Enter file url: ");
-        Scanner scanner = new Scanner(System.in);
-        String path = scanner.nextLine();
+
+        String path = "numbers.txt";
 
         ReadFileExample readFileExample = new ReadFileExample();
         readFileExample.readFileText(path);

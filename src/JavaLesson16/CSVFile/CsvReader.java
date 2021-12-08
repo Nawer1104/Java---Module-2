@@ -12,7 +12,7 @@ public class CsvReader {
         BufferedReader br = null;
         try {
             String line;
-            br = new BufferedReader(new FileReader("countries.csv"));
+            br = new BufferedReader(new FileReader("C:\\Users\\hihih\\IdeaProjects\\Demo\\ProductsList.csv"));
 
             while ((line = br.readLine()) != null) {
                 printCountry(parseCsvLine(line));
@@ -43,10 +43,11 @@ public class CsvReader {
 
     private static void printCountry(List<String> country) {
         System.out.println(
-                "Country [id= "
-                        + country.get(0)
-                        + ", code= " + country.get(1)
-                        + " , name=" + country.get(2)
+                "Country ["
+                        + ", name = " + country.get(0)
+                        + ", price = " + country.get(1)
+                        + " , quantity =" + country.get(2)
+                        + " , description =" + country.get(3)
                         + "]");
     }
 }
